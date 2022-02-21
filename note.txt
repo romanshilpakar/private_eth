@@ -1,0 +1,18 @@
+node0
+0x2edF529a12C65938dF7cb738D2207c793F4BE53B
+
+node1
+0x9C8a55cE9e6FDAf5A4B27dFd7E2d4Aed18ba0493
+
+enode://ca90b16904ca7e05e9ec1b472bc78e81e39e72ae8ca7f0592872b6a2103c44bf853b6f7b52450911e55da3d4a81382344ac883d7ae3bf5ba79fb77544e299ec6@127.0.0.1:0?discport=30301
+
+76626
+
+geth --datadir ./node1 --port 30302 --http --http.addr 'localhost' --http.port 8545 --http.api 'personal,db,eth,net,web3,txpool,miner' --bootnodes ' ' --networkid 76626 --unlock '0x9C8a55cE9e6FDAf5A4B27dFd7E2d4Aed18ba0493' --password ./node1/password.txt --mine console
+geth --datadir ./node1 --port 30302 --http --http.addr 'localhost' --http.port 8545 --http.api 'personal,db,eth,net,web3,txpool,miner' --bootnodes ' ' --networkid 76626 --allow-insecure-unlock  --password ./node1/password.txt --mine console
+geth --datadir ./node1 --port 30302 --http --http.addr 'localhost' --http.port 8545 --http.api 'personal,db,eth,net,web3,txpool,miner' --bootnodes ' ' --networkid 76626 --allow-insecure-unlock  --password ./node1/password.txt --mine console
+
+admin.Peers
+admin.startRPC("127.0.0.1",8545)
+admin.startHTTP("127.0.0.1",8545)
+admin.stopRPC() 
